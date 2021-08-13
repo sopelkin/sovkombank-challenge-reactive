@@ -8,13 +8,11 @@ import dev.softwarecats.scbchallenge.wsdl.ObjectFactory;
 import dev.softwarecats.scbchallenge.wsdl.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.ObjectUtils;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 import java.time.Duration;
-import java.util.Objects;
 
 @Slf4j
 public class SOAPUsersService extends WebServiceGatewaySupport implements UsersService {

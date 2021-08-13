@@ -1,7 +1,7 @@
 package dev.softwarecats.scbchallenge.web;
 
-import dev.softwarecats.scbchallenge.exceptions.TimeoutException;
 import dev.softwarecats.scbchallenge.exceptions.InteractionException;
+import dev.softwarecats.scbchallenge.exceptions.TimeoutException;
 import dev.softwarecats.scbchallenge.integrations.phones.PhonesService;
 import dev.softwarecats.scbchallenge.integrations.users.UsersService;
 import dev.softwarecats.scbchallenge.wsdl.User;

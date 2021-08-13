@@ -16,15 +16,15 @@ public class SecurityConfiguration {
     @Bean
     SecurityWebFilterChain configure(ServerHttpSecurity http) {
         return http
-            .csrf().disable()
-            .authorizeExchange()
-            .pathMatchers("/").permitAll()
-            .anyExchange().authenticated()
-            .and()
-            .httpBasic()
-            .and()
-            .formLogin().disable()
-            .build();
+                .csrf().disable()
+                .authorizeExchange()
+                .pathMatchers("/").permitAll()
+                .anyExchange().authenticated()
+                .and()
+                .httpBasic()
+                .and()
+                .formLogin().disable()
+                .build();
     }
 
     @Bean
@@ -34,6 +34,6 @@ public class SecurityConfiguration {
                 .password("{noop}password123")
                 .roles("ADMIN")
                 .build();
-       return new MapReactiveUserDetailsService(user);
+        return new MapReactiveUserDetailsService(user);
     }
 }
